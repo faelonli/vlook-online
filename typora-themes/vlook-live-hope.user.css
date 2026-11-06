@@ -78,3 +78,9 @@
 #typora-sidebar #file-library-list::after {
     background-image: none;
 }
+
+/* Hide the editor-only image caption placeholder. */
+content > #write .md-image:has(img[alt]):not([data-src*="#logo"]):not([data-src*="#icon"]):not([data-src*="#card"])::after {
+    content: none !important;
+    display: none !important;
+}
