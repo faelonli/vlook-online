@@ -85,3 +85,10 @@ content > #write .md-image:has(img[alt]):not([data-src*="#logo"]):not([data-src*
     content: none !important;
     display: none !important;
 }
+
+/* The lightweight build uses system fonts only. */
+.v-sts-font-style,
+.v-font-style-opt:not(:has(.v-font-style-opt-local)),
+.v-font-style-download {
+    display: none !important;
+}
