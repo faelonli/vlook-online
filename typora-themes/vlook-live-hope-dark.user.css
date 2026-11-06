@@ -1,0 +1,80 @@
+/* Hope appearance preferences for Typora and exported HTML. */
+:root {
+    --v-fs: local;
+    --v-fm-tt-local: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif;
+    --v-fm-stt-local: var(--v-fm-tt-local);
+    --v-fm-h-local: var(--v-fm-tt-local);
+    --v-fm-text-local: var(--v-fm-tt-local);
+    --v-fm-bd-local: var(--v-fm-tt-local);
+    --v-fm-key-local: var(--v-fm-tt-local);
+    --v-fm-tag-local: var(--v-fm-tt-local);
+    --v-fm-toc-local: var(--v-fm-tt-local);
+    --v-fm-code-local: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    --v-fm-tt: var(--v-fm-tt-local);
+    --v-fm-stt: var(--v-fm-stt-local);
+    --v-fm-h: var(--v-fm-h-local);
+    --v-fm-text: var(--v-fm-text-local);
+    --v-fm-bd: var(--v-fm-bd-local);
+    --v-fm-key: var(--v-fm-key-local);
+    --v-fm-tag: var(--v-fm-tag-local);
+    --v-fm-toc: var(--v-fm-toc-local);
+    --v-fm-code: var(--v-fm-code-local);
+    --v-fw-bd: var(--v-fw-bd-local);
+    --v-fw-toc: var(--v-fw-toc-local);
+    --v-fw-tag: var(--v-fw-tag-local);
+    --v-fw-tt: var(--v-fw-tt-local);
+    --v-fw-text: var(--v-fw-text-local);
+}
+
+/* Keep the navigation panel in the document's light or dark palette. */
+#typora-sidebar,
+.v-nav-center {
+    --v-ui-bg: var(--db);
+    --v-btn-bg: var(--db);
+    --toc-h-num-c: var(--df);
+    background-color: var(--db) !important;
+    color: var(--df) !important;
+    border-right: 1px solid var(--pn-c) !important;
+    box-shadow: none !important;
+}
+
+#typora-sidebar .sidebar-content,
+#typora-sidebar .file-node-content,
+#typora-sidebar .file-list-item,
+#typora-sidebar .sidebar-tabs,
+#typora-sidebar .sidebar-tab,
+#typora-sidebar .sidebar-tab-btn,
+#typora-sidebar .sidebar-footer,
+#typora-sidebar .outline-label,
+#typora-sidebar .outline-expander,
+#typora-sidebar .ty-icon,
+#typora-sidebar .file-node-icon,
+.v-nav-center .v-toc-item,
+.v-nav-center .md-toc-item {
+    color: var(--df) !important;
+}
+
+#typora-sidebar .file-list-item.active,
+#typora-sidebar .file-tree-node.active .file-node-background,
+#typora-sidebar .outline-item-active,
+#typora-sidebar .file-list-item:hover,
+#typora-sidebar .file-library-file-node:hover .file-node-background,
+.v-nav-center .v-item-current,
+.v-nav-center .v-toc-item:hover {
+    background: var(--pn-c) !important;
+}
+
+#typora-sidebar .file-list-item.active,
+#typora-sidebar .file-tree-node.active .file-node-content {
+    color: var(--df) !important;
+}
+
+/* Remove the decorative blue fades at the file list's edges. */
+#typora-sidebar #outline-content::before,
+#typora-sidebar #outline-content::after,
+#typora-sidebar .file-library-tree::before,
+#typora-sidebar .file-library-tree::after,
+#typora-sidebar #file-library-list::before,
+#typora-sidebar #file-library-list::after {
+    background-image: none;
+}
