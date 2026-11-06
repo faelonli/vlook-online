@@ -1,6 +1,6 @@
 # VLOOK 在线版 · Typora 配置
 
-本站托管 VLOOK 官方在线主题、排版增强插件和完整网络字体，使用 GitHub Pages 发布。
+本站托管定制的 VLOOK Hope 在线主题、排版增强插件和配套网络字体，使用 GitHub Pages 发布。
 
 - 站点 https://faelonli.github.io/vlook-online/
 - 官方项目 https://github.com/MadMaxChow/VLOOK
@@ -29,14 +29,15 @@ Hope 系列默认使用系统无衬线字体，macOS 使用系统字体及苹方
 - 表格、任务列表、代码块、数学公式和 Mermaid 图表使用 Typora 对应语法。
 - VLOOK 的增强导航、演示及主题切换等交互在导出的 HTML 中使用，具体语法参考官方使用攻略。
 - 导出文档引用本站的 CSS、JS 与网络字体，需要联网加载。首次加载较慢时请等待字体下载完成。
-- 切换其他配色可在 Typora 的主题菜单选择其他 `Vlook Live ...` 主题。
+- 主题精简为 `Vlook Live Hope`（自动明暗）、`Vlook Live Hope Light`（浅色）、`Vlook Live Hope Dark`（深色）。
+- 其余 VLOOK 主题及插件调试映射文件已移出部署目录。网络字体包供导出 HTML 中的可选字体切换使用，默认系统字体无需下载它们。
 
 ## 部署与维护
 
 GitHub Pages 通过 `.github/workflows/pages.yml` 从 `main` 分支根目录发布，`.nojekyll` 保证资源直接托管。
 发布流程为字体等资源同步预留 30 分钟，适用于默认 10 分钟部署等待超时的情况。
 仓库设置 → Pages → Source 应选择 GitHub Actions。
-`V2026.10.1/` 存放主题 CSS、字体 CSS、插件 JS 和语言包，`fonts/` 存放字体文件，`typora-themes/` 存放本地在线主题入口。
+`V2026.10.1/` 存放 Hope 三个版本的主题 CSS、字体 CSS、插件 JS 和语言包，`fonts/` 存放字体文件，`typora-themes/` 仅保留 Hope 三个本地在线主题入口及其定制样式。
 升级时保留旧版本资源目录，将新版本主题、插件和字体配套上传，并同步更新本地主题与导出配置。
 
 VLOOK 遵循 MIT 许可，见 LICENSE。字体来源为官方 openfonts 项目，各字体遵循其原作者的许可。
