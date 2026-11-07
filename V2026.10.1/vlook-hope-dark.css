@@ -92,3 +92,27 @@ content > #write .md-image:has(img[alt]):not([data-src*="#logo"]):not([data-src*
 .v-font-style-download {
     display: none !important;
 }
+
+/* Yellow text highlights and red inline code in both color schemes. */
+:root {
+    --mark-bg-lg: #ffeb3b;
+    --mark-bg-dk: #ffeb3b;
+    --code-t-lg: #e83e5b;
+    --code-t-dk: #ff7088;
+}
+
+#write mark,
+#write mark * {
+    color: #202020 !important;
+    background-color: #ffeb3b !important;
+    box-shadow: none !important;
+}
+
+#write code:not(pre code):not(.md-fences code) {
+    color: var(--code-t) !important;
+    background-color: var(--pn-c) !important;
+    border: 0 !important;
+    border-radius: 3px;
+    box-shadow: none !important;
+    padding: 0.1em 0.3em;
+}

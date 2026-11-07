@@ -12,7 +12,7 @@ description: Typora 与 GitHub Pages 在线主题验证
 
 ## 开始写作
 
-这是 **VLOOK Live Hope** 主题的中文示例。主题、插件及字体由自己的 GitHub Pages 站点提供。
+这是 **VLOOK Live Hope** 主题的中文示例。主题和插件由自己的 GitHub Pages 站点提供，字体使用系统字体。
 
 > [!TIP]
 > 在 Typora 中完成编辑后，通过「文件 → 导出 → VLOOK (live)」生成带增强功能的 HTML。
@@ -21,6 +21,7 @@ description: Typora 与 GitHub Pages 在线主题验证
 
 - **加粗文字**与*斜体文字*
 - ==高亮内容==、H~2~O 与 X^2^
+- 行内代码 `markdown` 与 `HTML`
 - 行内公式 $E=mc^2$
 
 | 功能 | 操作 |
