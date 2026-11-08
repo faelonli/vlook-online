@@ -115,3 +115,19 @@ content > #write .md-image:has(img[alt]):not([data-src*="#logo"]):not([data-src*
     box-shadow: none !important;
     padding: 0.1em 0.3em;
 }
+
+/* Match math to the surrounding text and follow Typora's font size setting. */
+#write .md-inline-math,
+#write .md-inline-math-container,
+#write .md-math-block,
+#write .md-math-block .md-math-container,
+#write .md-fences-math .md-diagram-panel-preview,
+#write .mathjax-block {
+    font-size: inherit !important;
+}
+
+#write mjx-container,
+#math-inline-preview mjx-container {
+    font-size: 100% !important;
+    zoom: 1;
+}
